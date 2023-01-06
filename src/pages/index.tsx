@@ -68,9 +68,7 @@ const Home: NextPage = () => {
               {IconeGithub}
             </Link>
           </section>
-
         </main>
-
       </div>
     </>
   )
