@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { useState } from 'react'
 import styles from '../styles/NavBar.module.css'
+import MenuItem from './MenuItem'
+import MenuItemMobile from './MenuItemMobile'
 import MenuMobile from './MenuMobile'
 
 
@@ -20,6 +22,7 @@ export default function NavBar() {
   return (
     <>
       <Head>
+        <link rel="icon" href="./darioreisportifolio.ico" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -31,36 +34,15 @@ export default function NavBar() {
           <img className={styles.logoImagem} src="https://pbs.twimg.com/media/D-XV1gXWkAAqNeG.jpg" alt="avatar" />
         </header>
         <nav>
-          <button>
-            <span>
-              <i className="material-symbols-outlined" >home</i>
-              <span>Home</span>
-            </span>
-          </button>
-
-          <button>
-            <span>
-              <i className="material-symbols-outlined" >tag</i>
-              <span>Explorar</span>
-            </span>
-          </button>
-
-          <button>
-            <span>
-              <i className="material-symbols-outlined" >email</i>
-              <span>mensagem</span>
-            </span>
-          </button>
-
-          <button>
-            <span>
-              <i className="material-symbols-outlined" >person</i>
-              <span>Profile</span>
-            </span>
-          </button>
-
+          <MenuItem icone='home' titulo='Home' />
+          <MenuItem icone='tag' titulo='Sobre Mim' />
+          <MenuItem icone='Track_Changes' titulo='Conhecimentos' />
+          <MenuItem icone='code' titulo='Projetos' />
+          <MenuItem icone='person' titulo='Contato' />
         </nav>
       </aside>
+
+
 
       <button onClick={toggleMenu} className={styles.buttonMobile}>
         <i className='material-symbols-outlined' >menu</i>
@@ -73,33 +55,12 @@ export default function NavBar() {
           </span>
         </button>
 
-        <button>
-          <span >
-            <i className="material-symbols-outlined" >home</i>
-            <span className={styles.mobileTexto} >Home</span>
-          </span>
-        </button>
+        <MenuItemMobile icone='home' titulo='Home' />
+        <MenuItemMobile icone='tag' titulo='Sobre Mim' />
+        <MenuItemMobile icone='Track_Changes' titulo='Conhecimentos' />
+        <MenuItemMobile icone='code' titulo='Projetos' />
+        <MenuItemMobile icone='person' titulo='Contato' />
 
-        <button>
-          <span>
-            <i className="material-symbols-outlined" >tag</i>
-            <span className={styles.mobileTexto}>Explorar</span>
-          </span>
-        </button>
-
-        <button>
-          <span>
-            <i className="material-symbols-outlined" >email</i>
-            <span className={styles.mobileTexto}>mensagem</span>
-          </span>
-        </button>
-
-        <button>
-          <span>
-            <i className="material-symbols-outlined" >person</i>
-            <span className={styles.mobileTexto}>Profile</span>
-          </span>
-        </button>
       </nav>
     </>
   )

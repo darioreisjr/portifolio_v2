@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Dario Reis</title>
         <meta name="description" content="Portifolio para expor meus projetos versão número 2" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./darioreisportifolio.ico" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
