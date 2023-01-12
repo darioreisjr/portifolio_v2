@@ -6,6 +6,12 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (width < 650px) {
+        width: 300px;
+        text-align: center;
+        align-items: center;
+    }
     
 `
 
@@ -15,6 +21,11 @@ export const Subtitulo = styled.p`
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+
+    
+    @media (width < 650px) {
+        font-size: 1.1rem;
+    }
 `
 const fadeIn = keyframes`
     0% {
@@ -45,6 +56,11 @@ export const Titulo = styled.h1`
             overflow: hidden;
             animation: 6s ${fadeIn} linear infinite;
         }
+
+        
+    @media (width < 650px) {
+        font-size: 3rem;
+    }
 
         
 

@@ -1,19 +1,14 @@
-import  {Container,Button,Texto } from './styles'
+import { Button } from './styles'
 
-interface IBotaoProps{
-    texto:string
+interface IBotaoProps {
+  texto: string
 }
 
-export default function Botao(props:IBotaoProps) {
+export default function Botao(props: IBotaoProps) {
   return (
-    <Container>
-        <Button>
-            <Texto>
-                {props.texto}
-            </Texto>
-        </Button>
+    <Button>
+      {props.texto}
+    </Button>
 
-    </Container>
-    
   )
 }

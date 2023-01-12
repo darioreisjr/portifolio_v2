@@ -5,7 +5,7 @@ import Botao from '../components/Botao'
 import IconeRedeSociais from '../components/IconeRedeSociais'
 import Letreiro from '../components/Letreiro'
 
-import {Grid, GridItems, Body} from '../styles/styled'
+import {Box, GridItems, Container} from '../styles/styled'
 
 const Home: NextPage = () => {
 
@@ -22,9 +22,9 @@ const Home: NextPage = () => {
       </Head>
 
 
-      <Body>
+      <Container>
 
-        <Grid>
+        <Box>
 
           <GridItems>
             <Avatar linkImagem='https://www.programador360.com.br/wp-content/uploads/2022/08/top-art-languages.png' />
@@ -42,13 +42,13 @@ const Home: NextPage = () => {
             <IconeRedeSociais link='https://img.icons8.com/clouds/50/null/github.png' />
           </GridItems>
 
-        </Grid>
+        </Box>
 
         <div>
           <Botao texto="Vamos Nessa?" />
         </div>
 
-      </Body>
+      </Container>
     </>
   )
 }

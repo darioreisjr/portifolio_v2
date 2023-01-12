@@ -11,7 +11,6 @@ export default function Letreiro(props: ILetreiroProps) {
         <Container>
             <Subtitulo> {props.texto} </Subtitulo>
             <Titulo data-text={props.titulo}>{props.titulo}</Titulo>
-
         </Container>
     )
 }

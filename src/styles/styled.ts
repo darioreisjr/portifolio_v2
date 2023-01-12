@@ -1,42 +1,48 @@
 import styled from "styled-components";
 
-export const Grid = styled.div`
+export const Container = styled.div`
+    width: 100vw;
+    min-height: 320px;
     display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    @media (width < 650px) {
+        width: 300px;
+    }
+
+    
+`
+
+export const Box = styled.div`
+    width: 100%;
+    min-width: 320px;
+    max-width: 1700px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    box-sizing: border-box;
+    margin: 25px;
 
-    @media (width < 1159px) {
-    flex-direction: column;
-    justify-content: center;
+    @media (width < 1090px) {
+        flex-direction: column;
+    }
 
-  }
+
+  
 `
 export const GridItems = styled.div`
-@media (width < 1159px) {
-    display: flex;
-    justify-content: center;
-  }
+  
+  @media (width < 650px) {
+        display: flex;
+    }
+  @media (width < 1090px) {
+        display: flex;
+    }
+
+
 
 `
-export const Body = styled.body`
-    width: 100vw;
-    height: 100vh;
 
-    padding: 24px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center ;
-    gap: 10%;
-
-    @media (width < 1159px) {
-    display: flex;
-    gap: 0;
-    box-sizing: border-box;
-
-  }
-`

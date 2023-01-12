@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const Container = styled.div`
     margin: 10px;
     width: 500px;
+
+    @media (width < 650px) {
+      width: 300px;
+  }
 `
 
 export const Imagem = styled.img`
